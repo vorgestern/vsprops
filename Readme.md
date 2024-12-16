@@ -26,14 +26,14 @@ Only examples so far.
 
 # Examples
 
-SubsystemConsole.props
-: Used by projects intended for the console. Defines the subsystem and corresponding preprocessor definitions.
+**SubsystemConsole.props**
+: Used by projects intended for the console. Defines the subsystem and corresponding preprocessor definitions for any platform and configuration.
 
-SubsystemWindows.props
-: Used by GUI-Projects. Defines the subsystem and corresponding preprocessor definitions.
+**SubsystemWindows.props**
+: Used by GUI-Projects. Defines the subsystem and corresponding preprocessor definitions for any platform and configuration.
 
-LuaForWindows.props
-: Used to include Lua installed by [LuaForWindows](https://github.com/rjpcomputing/luaforwindows)
+**LuaForWindows.props**
+: Used to include Lua installed by [LuaForWindows](https://github.com/rjpcomputing/luaforwindows). Works for any platform and configuration.
 
-precompiled_headers.props
-: Used to configure the use of precompiled headers. Makes it easy to adapt the name of the header or the pch-file.
+**precompiled_headers.props**
+: Used to configure the use of precompiled headers. Makes it easy to adapt the name of the header or the pch-file for any platform and configuration.
