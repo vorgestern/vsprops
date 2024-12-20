@@ -19,5 +19,13 @@
         </Link>
     </ItemDefinitionGroup>
 
+    <!--
+        LuaForWindows extends PATH, typically like this:
+            C:\Program Files (x86)\Lua\5.1
+            C:\Program Files (x86)\Lua\5.1\clibs
+        Make sure you are building with Lua 5.1 if you are
+        using LuaForWindows.
+    -->
+
     <ItemGroup/>
 </Project>
