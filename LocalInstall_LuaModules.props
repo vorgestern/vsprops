@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <!-- Use PropertyGroup/OutDir to define the output directory of the project.
+         The example shows the use of an environment variable.
+         Make sure to import this property sheet only for the configuration|Platform, that
+         you want installed (typically Release|x64) -->
+    <PropertyGroup>
+        <OutDir>$(ROBINSON)\lua\modules\</OutDir>
+    </PropertyGroup>
+
+</Project>
