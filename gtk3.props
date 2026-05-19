@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup Label="PropertySheets"/>
+    <PropertyGroup Label="UserMacros"/>
+    <PropertyGroup>
+        <_PropertySheetDisplayName>gtk3 PropertySheet</_PropertySheetDisplayName>
+    </PropertyGroup>
+    <PropertyGroup Label="UserMacros">
+        <MSYS>C:\msys64\ucrt64\</MSYS>
+    </PropertyGroup>
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <PreprocessorDefinitions>LIBDEFLATE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <AdditionalIncludeDirectories>
+$(MSYS)include\gtk-3.0;
+$(MSYS)include\pango-1.0;
+$(MSYS)include\fribidi;
+$(MSYS)include\atk-1.0;
+$(MSYS)include\cairo;
+$(MSYS)include\freetype2;
+$(MSYS)include\harfbuzz;
+$(MSYS)include\pixman-1;
+$(MSYS)include\gdk-pixbuf-2.0;
+$(MSYS)include\libpng16;
+$(MSYS)include\webp;
+$(MSYS)include\glib-2.0;
+$(MSYS)lib\glib-2.0\include;
+%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <Link>
+            <AdditionalDependencies>
+libgtk-3.dll.a;
+libgdk-3.dll.a;
+libpangowin32-1.0.dll.a;
+libpangocairo-1.0.dll.a;
+libpango-1.0.dll.a;
+libharfbuzz.a;
+libz.dll.a;
+libatk-1.0.dll.a;
+libcairo-gobject.dll.a;
+libcairo.dll.a;
+libgdk_pixbuf-2.0.dll.a;
+libgio-2.0.dll.a;
+libgobject-2.0.dll.a;
+libglib-2.0.dll.a;
+libgdi32.a;
+libimm32.a;
+libshell32.a;
+libole32.a;
+libuuid.a;
+libwinmm.a;
+libdwmapi.a;
+libsetupapi.a;
+libcfgmgr32.a;
+libhid.a;
+libwinspool.a;
+libcomctl32.a;
+libcomdlg32.a;
+libintl.a;
+%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalLibraryDirectories>$(MSYS)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+        </Link>
+    </ItemDefinitionGroup>
+</Project>
